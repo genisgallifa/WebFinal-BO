@@ -1,0 +1,664 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 227, 215);
+    font-family: 'arial';
+    width: 100%;
+    margin: 5px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    cursor: default;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(243, 159, 126);
+    height: auto;
+}
+
+h1 {
+    padding: 25px;
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    font-size: 35px;
+}
+
+h2 {
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    font-size: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.menu {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding: 8px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.logo:hover {
+    transition: transform 0.5s;
+    transform: rotate(360deg);
+}
+
+nav {
+    margin-top: 25px;
+    float: right;
+    margin-right: 25px;
+    padding-right: 50px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 4px white;
+}
+
+a:hover {
+    color: white;
+}
+
+
+
+/*Sota de la capçalera*/
+.container {
+    text-align: center;
+    margin: 10px;
+}
+
+.container .imagte-portada {
+
+    width: 90%;
+    height: 350px;
+}
+
+.titulets {
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 80px;
+
+    text-align: left;
+    border-top: solid rgba(0, 0, 0, 0.5);
+}
+
+div {
+    justify-content: center;
+    align-items: center;
+}
+
+.noticies {
+    display: flex;
+    padding: 25px;
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+
+    align-items: stretch;
+}
+
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2%);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+}
+
+.card p {
+    line-height: 1.5;
+    color: gray;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.card h3 {
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.card a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+    color: rgb(243, 159, 126);
+    border: 1px solid rgb(243, 159, 126);
+    border-radius: 10px;
+    transition: all 400ms ease;
+    margin-bottom: 10px;
+}
+
+.card a:hover {
+    background-color: rgb(243, 159, 126);
+    color: white
+}
+
+.titulets_horitzontal {
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 1%;
+    padding-left: 80px;
+
+    border-top: solid rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.titulets_horitzontal .dolents {
+    margin-left: -5%;
+    width: 90%;
+}
+
+.bons,
+.dolents {
+    font-size: 25px;
+    flex: 1;
+}
+
+.bolets_pagina {
+    margin-bottom: 5%;
+}
+
+.foto_bons {
+    float: right;
+    height: 150px;
+    width: 250px;
+    padding-left: 3%;
+    padding-right: 5%;
+}
+
+.bolets_bons {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: justify;
+}
+
+.bb, .bd {
+    flex: 1;
+    width: 40%;
+}
+
+.bb p {
+    margin-top: 1.5%;
+    margin-right: 10%;
+}
+
+.bd p {
+    margin-top: 1.5%;
+    margin-right: 10%;
+}
+
+.bolets_bons .bd {
+    margin-top: 2px;
+}
+
+.bolets_mesInfo {
+    text-align: center;
+    padding: 2%;
+}
+
+.bolets_mesInfo a {
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    color: rgb(243, 159, 126);
+    border: 1px solid rgb(243, 159, 126);
+    border-radius: 10px;
+    transition: all 400ms ease;
+    margin-bottom: 10px;
+}
+
+.bolets_mesInfo a:hover {
+    background-color: rgb(243, 159, 126);
+    color: white
+}
+
+
+
+
+
+
+/* Galeria d'imatges */
+.galeria {
+    background-color: rgb(255, 227, 215);
+    margin-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titol-galeria {
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 1%;
+    text-align: center; 
+}
+
+.galeria-item {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.galeria-item:hover {
+    transform: scale(1.1);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.missatge-nom-bolet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    z-index: 1;
+}
+
+.mostrarNomsBolets {
+    width: 180px;
+    height: 30px;
+    background-color: gray;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    /* Centra el botó */
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+.mostrarNomsBolets:hover {
+    background-color: darkgray;
+}
+
+
+.mostrarNomsBolets:active {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+.contingut2 {
+    margin-bottom: 25px;
+}
+
+.contingut2 p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.receptes {
+    display: flex;
+    padding: 25px;
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+
+    align-items: stretch;
+}
+
+.llocs {
+    display: flex;
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+
+    align-items: stretch;
+}
+
+.llocs_mes {
+    text-align: center;
+    padding: 2%;
+}
+
+.llocs_mes a {
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    color: rgb(243, 159, 126);
+    border: 1px solid rgb(243, 159, 126);
+    border-radius: 10px;
+    transition: all 400ms ease;
+    margin-bottom: 10px;
+}
+
+.llocs_mes a:hover {
+    background-color: rgb(243, 159, 126);
+    color: white
+}
+
+
+
+
+
+/*comentaris*/
+.comentaris {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titol-galeria {
+    margin-top: 4%;
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-left: 80px;
+
+    text-align: left;
+    border-top: solid rgba(0, 0, 0, 0.5);
+}
+
+.comentari {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.comentari p {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+.usuari {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.usuari img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comentari h3 {
+    margin-bottom: 3%;
+}
+
+.usuari p {
+    white-space: nowrap;
+}
+
+.text-comentari {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+button.like-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
+    transition: background-color 0.3s;
+}
+
+button.like-button:hover {
+    background-color: #d32f2f;
+}
+
+
+/*Enllaços d'interés*/
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.llegirMes {
+    text-align: center;
+}
+
+.llegirMes a {
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    color: rgb(243, 159, 126);
+    border: 1px solid rgb(243, 159, 126);
+    border-radius: 10px;
+    transition: all 400ms ease;
+    margin-bottom: 10px;
+}
+
+.llegirMes a:hover {
+    background-color: rgb(243, 159, 126);
+    color: white
+}
+
+
+
+
+
+footer {
+    bottom: 0;
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+    background-color: rgb(243, 159, 126);
+    color: #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.contacte {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    text-align: center;
+}
+
+.item img {
+    width: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*Responsive*/
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        float: center;
+        padding: 15px;
+    }
+
+    .noticies {
+        padding-bottom: 5%;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+    .container .imagte-portada {
+        width: 100%;
+        height: auto;
+    }
+
+    .titulets {
+        padding-left: 10px;
+    }
+
+    .titulets_horitzontal {
+        padding-left: 25px;
+
+    }
+
+    .receptes {
+        flex-direction: column;
+    }
+
+    .llocs {
+        flex-direction: column;
+    }
+
+    .noticies {
+        flex-direction: column;
+    }
+
+    .foto_bons {
+        height: 100px;
+        width: 200px;
+        padding-left: 7px;
+    }
+
+    .bd .foto_bons {
+        margin-left: 5px;
+        align-items: stretch;
+    }
+
+    .bd {
+        margin-top: 0;
+    }
+
+    .comentaris {
+        margin-left: 15%;
+    }
+
+    .comentari {
+        width: 90%;
+    }
+
+    .bolets_bons {
+        margin-left: 25px;
+    }
+
+    .footer {
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    .card,.bolets_pagina,.bb,.bd,.bolets_mesInfo,.contingut2,.contacte {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .mostrarNomsBolets {
+
+        /* Centra el botó */
+        display: block;
+        margin: auto;
+    }
+}
